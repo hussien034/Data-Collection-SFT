@@ -1,0 +1,96 @@
+#header{
+    background-color: #002768;
+    width: auto;
+    color: white;
+    direction: rtl !important;
+}
+h1{
+    text-align: center;
+}
+.navbar{
+    direction: rtl;
+    background-color: #002768;
+    height: 80px !important;
+}
+.nav-link{
+    color:#C09300;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-size: 20px;
+}
+.nav-link:hover{
+    color:white;
+}
+.navbar-toggler{
+    background-color: aliceblue;
+}
+  .ministry{
+    width: 70px;
+}
+label{
+    margin: 10px 0px !important;
+    color: #20ff18;
+}
+.btn-1{
+    direction: ltr;
+    background-color: #C09300;
+    margin-top: 10px;
+    width: 150px;
+}
+.btn-1:hover{
+
+    background-color: #C09300;
+}
+table{
+    direction: rtl;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid;
+    
+  }
+thead{
+    border-bottom:5px solid black ;
+}
+thead td{
+    font-size: 16px;
+}
+.deletebt{
+    background-color: #002768;
+    color: white;
+    border: 0px;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+}
+.printButton{
+    background-color: #C09300;
+    margin-top: 10px;
+    width: 150px;
+}
+.printButton:hover{
+    background-color: #C09300;
+}
+@media all and (max-width:500px){
+    .ministry{
+        width: 60px;
+    }
+    .collapse{
+        background-color: yellow; 
+    }
+    .nav-link{
+        color: black;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+        font-size: 20px;
+    }
+    .nav-link:hover{
+        color:black;
+    }
+    .ord-1{
+        order: 1 !important;
+    }
+    .ord-2{
+        order: 2;
+    }
+}

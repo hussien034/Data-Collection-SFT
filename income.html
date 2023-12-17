@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Instituite For Specaical Forces Traning</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    
+    <section id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/Egyptian_Police_Emblem.svg.png" class="ministry"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="income.html">الفرق التدربية القادمة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">وثيقة التعارف </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row mt-5 p-3">
+        <div class="col-md-6 m-auto text-center mt-5">
+          <h1>الفرق التدربية القادمة</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form class="form1">
+            <label>الأسم</label>
+          <input type="text" class="form-control input1" id="name" placeholder="الأسم">
+          </div>
+          <div class="col-md-6">
+            <label>الرتبة</label>
+          <input type="text" class="form-control input1" id="major" placeholder="الرتبة">
+          </div>
+          <div class="col-md-6">
+            <label>الأقدمية</label>
+          <input type="text" class="form-control input1" id="range" placeholder="الأقدمية">
+          </div>
+          <div class="col-md-6">
+            <label>جهة العمل الحالية</label>
+          <input type="text" class="form-control input1" id="placeOfNewWork" placeholder="جهة العمل الحالية">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <label>الفرقة التدربية</label>
+                <input type="text" class="form-control input1" id="theNameOfCourse" placeholder="الفرق التدربية">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12  d-flex justify-content-center">
+            <button  id="submit" disabled="disabled" class="btn-1 btn mt-4" onclick="addData()" >Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <table  class="table table-light table-hover mt-4 ">
+              <thead>
+                 <tr>
+                  <td>الرقم</td>
+                  <td>الأسم</td>
+                  <td>الرتبة</td>
+                  <td>الأقدمية</td>
+                  <td>جهة العمل الحالية</td>
+                  <td>الفرقة التدربية</td>
+                  <td>حذف</td>
+                 </tr>
+              </thead>
+              <tbody id="table">
+
+              </tbody>
+              </table>
+              <div class="col-md-12 text-center">
+                <button class="btn printButton m-4" onclick="printTable()">Print</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script src="js/income.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </body>
+</html>
